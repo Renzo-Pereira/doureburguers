@@ -1,0 +1,73 @@
+li {
+    list-style: none;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffc27f;
+  }
+
+
+@media (max-width: 1366px) {
+  header {
+    display: flex;
+    background-image: url("../../assets/fondoHeader.webp");
+    justify-content: space-between;
+  }
+
+  ul {
+    padding: 0 5rem 0 0;
+}
+
+
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: #ffc27f;
+  }
+
+  .nav {
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(32, 33, 36);
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(240, 248, 255, 0.5);
+    font-size: 1.5rem;
+  }
+
+  .visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1367px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../../assets/fondoHeader.webp");
+  }
+
+  button {
+    display: none;
+  }
+
+  nav ul{
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+}
