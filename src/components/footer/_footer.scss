@@ -1,0 +1,21 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-image: url("../../assets/fondoHeader.webp");
+    color: #fff;
+    text-align: center;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        li{
+            font-size: 2rem;
+        }
+    }
+}

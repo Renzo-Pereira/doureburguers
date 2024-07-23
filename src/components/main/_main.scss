@@ -36,3 +36,15 @@ main {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
 }
+
+@media (min-width: 1300px){
+main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menu .burguer {
+  width: 25%;
+}
+}
