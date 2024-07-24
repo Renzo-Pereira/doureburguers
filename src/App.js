@@ -2,14 +2,21 @@ import "./App.css";
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import Main from "./components/main/mian";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Productos from "./components/productos/productos";
+import Promos from "./components/promos/promos";
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Header />
-      <Main />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/productos" element={<Productos />} />
+        <Route path="/promos" element={<Promos />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

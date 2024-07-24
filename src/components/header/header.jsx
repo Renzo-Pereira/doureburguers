@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Logo from "../../assets/logo.jpg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   useEffect(() => {
@@ -31,11 +32,11 @@ const Header = () => {
           <i className="bi bi-x-lg"></i>
         </button>
         <ul>
-          <li>Inicio</li>
-          <li>Pedí!</li>
-          <li>Promos</li>
-          <li>Menu</li>
-          <li>Contacto</li>
+          <li><Link to={"/"}>Inicio</Link></li>
+          <li><Link to={"/"}>Pedí!</Link></li>
+          <li><Link to={"/"}>Promos</Link></li>
+          <li><Link to={"/productos"}>Menu</Link></li>
+          <li><Link to={"/"}>Contacto</Link></li>
         </ul>
       </nav>
     </header>
